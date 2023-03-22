@@ -5,6 +5,7 @@
 members:
   admin:
     - iand
+    - dennis-tra
 teams:
   probelab-core:
     description: Members of the ProbeLab team at Protocol Labs
@@ -12,6 +13,7 @@ teams:
     members:
       maintainer:
         - iand
+        - dennis-tra
 repositories:
   github-mgmt:
     description: GitHub Management
