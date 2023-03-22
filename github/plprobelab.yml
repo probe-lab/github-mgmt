@@ -1,0 +1,61 @@
+# yaml-language-server: $schema=.schema.json
+
+# See https://github.com/protocol/github-mgmt-template/blob/master/docs/EXAMPLE.yml
+
+members:
+  admin:
+    - iand
+teams:
+  probelab-core:
+    description: Members of the ProbeLab team at Protocol Labs
+    privacy: closed
+    members:
+      maintainer:
+        - iand
+repositories:
+  github-mgmt:
+    description: GitHub Management
+    homepage_url: https://github.com/protocol/github-mgmt-template
+    visibility: private
+    branch_protection:
+      master:
+        allows_deletions: false
+        allows_force_pushes: false
+        enforce_admins: false
+        require_conversation_resolution: false
+        require_signed_commits: false
+        required_linear_history: false
+        push_restrictions: []
+        required_pull_request_reviews:
+          dismiss_stale_reviews: false
+          dismissal_restrictions: []
+          pull_request_bypassers: []
+          require_code_owner_reviews: false
+          required_approving_review_count: 1
+          restrict_dismissals: false
+        required_status_checks:
+          contexts:
+            - Comment
+          strict: true
+    teams:
+      admin:
+        - probelab-core
+    allow_merge_commit: true
+    allow_rebase_merge: true
+    allow_squash_merge: true
+    has_downloads: false
+    has_issues: false
+    has_projects: false
+    has_wiki: false
+    allow_auto_merge: false
+    archived: false
+    auto_init: false
+    default_branch: master
+    delete_branch_on_merge: true
+    archive_on_destroy: true
+    is_template: false
+    vulnerability_alerts: false
+    ignore_vulnerability_alerts_during_read: false
+    template:
+      owner: protocol
+      repository: github-mgmt-template
