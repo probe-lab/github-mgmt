@@ -16,7 +16,7 @@ repositories:
   github-mgmt:
     description: GitHub Management
     homepage_url: https://github.com/protocol/github-mgmt-template
-    visibility: private
+    visibility: public
     branch_protection:
       master:
         allows_deletions: false
