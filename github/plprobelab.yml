@@ -2,22 +2,5 @@
 
 # See https://github.com/protocol/github-mgmt-template/blob/master/docs/EXAMPLE.yml
 
-members:
-  admin:
-    - iand
-    - dennis-tra
-    - guillaumemichel
-    - yiannisbot
-    - galargh
-teams:
-  probelab-core:
-    description: Members of the ProbeLab team at Protocol Labs
-    privacy: closed
-    members:
-      maintainer:
-        - iand
-        - dennis-tra
-        - guillaumemichel
-        - yiannisbot
 repositories:
   github-mgmt: {}
