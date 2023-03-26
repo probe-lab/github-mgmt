@@ -17,15 +17,12 @@ repositories:
   website:
     archived: false
     default_branch: main
-    visibility: public
-    allow_merge_commit: false
-    allow_rebase_merge: false
-    allow_squash_merge: true
     teams:
       admin:
         - probelab-core
     topics:
       - ipfs
+    visibility: public
 teams:
   probelab-core:
     description: Members of the ProbeLab team at Protocol Labs
