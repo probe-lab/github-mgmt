@@ -10,6 +10,12 @@ members:
     - iand
     - yiannisbot
 repositories:
+  caracol:
+    archived: false
+    default_branch: main
+    description: Caracol is a service for aggregating time series from external data
+      systems.
+    visibility: public
   github-mgmt:
     archived: false
     default_branch: master
