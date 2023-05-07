@@ -10,6 +10,10 @@ members:
     - iand
     - yiannisbot
 repositories:
+  ashby:
+    archived: false
+    default_branch: main
+    visibility: private
   caracol:
     archived: false
     default_branch: main
@@ -19,6 +23,30 @@ repositories:
   github-mgmt:
     archived: false
     default_branch: master
+    visibility: public
+  parsec:
+    archived: false
+    collaborators:
+      admin:
+        - dennis-tra
+        - iand
+    default_branch: main
+    description: ፨ Parsec is a DHT performance measurement tool
+    teams:
+      pull:
+        - probelab-core
+    visibility: public
+  tiros:
+    archived: false
+    collaborators:
+      admin:
+        - dennis-tra
+        - iand
+    default_branch: main
+    description: 🌐 An IPFS website measurement tool
+    teams:
+      pull:
+        - probelab-core
     visibility: public
   website:
     archived: false
