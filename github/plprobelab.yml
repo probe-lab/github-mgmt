@@ -13,7 +13,7 @@ repositories:
   ashby:
     archived: false
     default_branch: main
-    visibility: private
+    visibility: public
   caracol:
     archived: false
     default_branch: main
@@ -50,6 +50,9 @@ repositories:
     visibility: public
   website:
     archived: false
+    collaborators:
+      push:
+        - probelab-cmi
     default_branch: main
     teams:
       admin:
