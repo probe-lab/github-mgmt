@@ -89,6 +89,28 @@ repositories:
       pull:
         - probelab-core
     visibility: public
+  probelab-infra:
+    advanced_security: false
+    allow_update_branch: true
+    archived: false
+    collaborators:
+      admin:
+        - dennis-tra
+        - pl-deploy-bot
+      push:
+        - lidel
+    default_branch: main
+    has_discussions: false
+    merge_commit_message: PR_TITLE
+    merge_commit_title: MERGE_MESSAGE
+    secret_scanning_push_protection: false
+    secret_scanning: false
+    squash_merge_commit_message: PR_BODY
+    squash_merge_commit_title: PR_TITLE
+    teams:
+      pull:
+        - probelab-core
+    visibility: private
   tiros:
     advanced_security: false
     allow_update_branch: false
