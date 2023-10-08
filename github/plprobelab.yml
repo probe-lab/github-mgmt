@@ -193,6 +193,8 @@ repositories:
       admin:
         - dennis-tra
         - pl-deploy-bot
+      pull:
+        - whizzzkid
       push:
         - lidel
     default_branch: main
@@ -274,7 +276,7 @@ repositories:
     visibility: public
   zikade:
     advanced_security: false
-    allow_update_branch: false
+    allow_update_branch: true
     archived: false
     branch_protection:
       main:
@@ -300,8 +302,8 @@ repositories:
     merge_commit_title: MERGE_MESSAGE
     secret_scanning_push_protection: true
     secret_scanning: true
-    squash_merge_commit_message: COMMIT_MESSAGES
-    squash_merge_commit_title: COMMIT_OR_PR_TITLE
+    squash_merge_commit_message: PR_BODY
+    squash_merge_commit_title: PR_TITLE
     teams:
       admin:
         - probelab-core
