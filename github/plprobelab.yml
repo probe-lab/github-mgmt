@@ -193,10 +193,13 @@ repositories:
       admin:
         - dennis-tra
         - pl-deploy-bot
+      maintain:
+        - BigLep
       pull:
         - whizzzkid
       push:
         - lidel
+        - SgtPooki
     default_branch: main
     has_discussions: false
     merge_commit_message: PR_TITLE
