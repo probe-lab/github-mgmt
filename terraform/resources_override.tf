@@ -8,8 +8,11 @@ resource "github_repository" "this" {
       allow_rebase_merge,
       allow_squash_merge,
       archive_on_destroy,
+      archived,
       auto_init,
+      default_branch,
       delete_branch_on_merge,
+      description,
       gitignore_template,
       has_downloads,
       has_issues,
@@ -21,7 +24,35 @@ resource "github_repository" "this" {
       license_template,
       pages,
       template,
-      vulnerability_alerts,
+      topics,
+      visibility,
+      vulnerability_alerts
+    ]
+  }
+}
+
+resource "github_branch_protection" "this" {
+  lifecycle {
+    ignore_changes = [
+      allows_deletions,
+      allows_force_pushes,
+      enforce_admins,
+      push_restrictions,
+      require_conversation_resolution,
+      require_signed_commits,
+      required_linear_history,
+      # required_pull_request_reviews,
+      # required_status_checks
+    ]
+  }
+}
+
+resource "github_team" "this" {
+  lifecycle {
+    ignore_changes = [
+      description,
+      parent_team_id,
+      privacy,
     ]
   }
 }
