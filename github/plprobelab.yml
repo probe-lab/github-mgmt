@@ -11,6 +11,7 @@ members:
     - yiannisbot
   member:
     - web3-bot
+    - probelab-cmi
 repositories:
   ashby:
     advanced_security: false
@@ -202,7 +203,7 @@ repositories:
     squash_merge_commit_message: COMMIT_MESSAGES
     squash_merge_commit_title: COMMIT_OR_PR_TITLE
     teams:
-      pull:
+      admin:
         - probelab-core
     visibility: public
   parsec:
@@ -343,7 +344,7 @@ repositories:
     squash_merge_commit_message: COMMIT_MESSAGES
     squash_merge_commit_title: COMMIT_OR_PR_TITLE
     teams:
-      pull:
+      admin:
         - probelab-core
     visibility: public
   website:
