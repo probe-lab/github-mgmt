@@ -140,6 +140,9 @@ repositories:
     advanced_security: false
     allow_update_branch: false
     archived: false
+    collaborators:
+      push:
+        - web3-bot
     default_branch: main
     description: A Gossipsub listener and tracer.
     has_discussions: false
@@ -150,13 +153,13 @@ repositories:
     squash_merge_commit_message: COMMIT_MESSAGES
     squash_merge_commit_title: COMMIT_OR_PR_TITLE
     visibility: public
-    collaborators:
-      push:
-        - web3-bot
   musa:
     advanced_security: false
     allow_update_branch: false
     archived: false
+    collaborators:
+      push:
+        - web3-bot
     default_branch: main
     description: 🍌 A lean DHT bootstrapper for any libp2p-based network
     has_discussions: false
@@ -167,13 +170,13 @@ repositories:
     squash_merge_commit_message: COMMIT_MESSAGES
     squash_merge_commit_title: COMMIT_OR_PR_TITLE
     visibility: public
-    collaborators:
-      push:
-        - web3-bot
   nebula-analysis:
     advanced_security: false
     allow_update_branch: false
     archived: false
+    collaborators:
+      push:
+        - web3-bot
     default_branch: main
     has_discussions: false
     merge_commit_message: PR_TITLE
@@ -183,9 +186,6 @@ repositories:
     squash_merge_commit_message: COMMIT_MESSAGES
     squash_merge_commit_title: COMMIT_OR_PR_TITLE
     visibility: private
-    collaborators:
-      push:
-        - web3-bot
   network-measurements:
     advanced_security: false
     allow_update_branch: false
