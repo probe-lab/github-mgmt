@@ -10,8 +10,8 @@ members:
     - iand
     - yiannisbot
   member:
-    - web3-bot
     - probelab-cmi
+    - web3-bot
 repositories:
   ashby:
     advanced_security: false
