@@ -24,7 +24,6 @@ resource "github_repository" "this" {
       license_template,
       pages,
       template,
-      topics,
       visibility,
       vulnerability_alerts
     ]
