@@ -317,6 +317,11 @@ repositories:
     teams:
       pull:
         - probelab-core
+    topics:
+      - golang
+      - ipfs
+      - kademlia
+      - libp2p
     visibility: public
   tracecatcher:
     advanced_security: false
