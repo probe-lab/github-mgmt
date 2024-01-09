@@ -11,16 +11,6 @@ members:
     - yiannisbot
   member:
     - web3-bot
-teams:
-  probelab-core:
-    description: Members of the ProbeLab team at Protocol Labs
-    members:
-      maintainer:
-        - dennis-tra
-        - guillaumemichel
-        - iand
-        - yiannisbot
-    privacy: closed
 repositories:
   ashby:
     advanced_security: false
@@ -416,3 +406,13 @@ repositories:
       - kademlia
       - libp2p
     visibility: public
+teams:
+  probelab-core:
+    description: Members of the ProbeLab team at Protocol Labs
+    members:
+      maintainer:
+        - dennis-tra
+        - guillaumemichel
+        - iand
+        - yiannisbot
+    privacy: closed
