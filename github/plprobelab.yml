@@ -408,8 +408,14 @@ repositories:
       - libp2p
     visibility: public
 teams:
+  probelab-bots:
+    description: Bot users that ProbeLab uses to automate their infrastructure
+    members:
+      member:
+        - web3-bot
+        - probelab-cmi
   probelab-core:
-    description: Members of the ProbeLab team at Protocol Labs
+    description: Members of the ProbeLab team
     members:
       maintainer:
         - dennis-tra
