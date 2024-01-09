@@ -412,8 +412,8 @@ teams:
     description: Bot users that ProbeLab uses to automate their infrastructure
     members:
       member:
-        - web3-bot
         - probelab-cmi
+        - web3-bot
   probelab-core:
     description: Members of the ProbeLab team
     members:
