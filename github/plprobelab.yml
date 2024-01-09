@@ -112,9 +112,6 @@ repositories:
     advanced_security: false
     allow_update_branch: false
     archived: false
-    collaborators:
-      admin:
-        - guillaumemichel
     default_branch: main
     description: Generic Go DHT toolbox
     has_discussions: false
@@ -124,9 +121,6 @@ repositories:
     secret_scanning: true
     squash_merge_commit_message: COMMIT_MESSAGES
     squash_merge_commit_title: COMMIT_OR_PR_TITLE
-    teams:
-      pull:
-        - probelab-core
     visibility: public
   go-libp2p:
     advanced_security: false
@@ -156,6 +150,9 @@ repositories:
     squash_merge_commit_message: COMMIT_MESSAGES
     squash_merge_commit_title: COMMIT_OR_PR_TITLE
     visibility: public
+    collaborators:
+      push:
+        - web3-bot
   musa:
     advanced_security: false
     allow_update_branch: false
@@ -170,6 +167,9 @@ repositories:
     squash_merge_commit_message: COMMIT_MESSAGES
     squash_merge_commit_title: COMMIT_OR_PR_TITLE
     visibility: public
+    collaborators:
+      push:
+        - web3-bot
   nebula-analysis:
     advanced_security: false
     allow_update_branch: false
@@ -183,17 +183,13 @@ repositories:
     squash_merge_commit_message: COMMIT_MESSAGES
     squash_merge_commit_title: COMMIT_OR_PR_TITLE
     visibility: private
+    collaborators:
+      push:
+        - web3-bot
   network-measurements:
     advanced_security: false
     allow_update_branch: false
     archived: false
-    collaborators:
-      admin:
-        - dennis-tra
-        - guillaumemichel
-        - iand
-      push:
-        - probelab-cmi
     default_branch: master
     has_discussions: false
     merge_commit_message: PR_TITLE
@@ -202,18 +198,11 @@ repositories:
     secret_scanning: true
     squash_merge_commit_message: COMMIT_MESSAGES
     squash_merge_commit_title: COMMIT_OR_PR_TITLE
-    teams:
-      admin:
-        - probelab-core
     visibility: public
   parsec:
     advanced_security: false
     allow_update_branch: false
     archived: false
-    collaborators:
-      admin:
-        - dennis-tra
-        - iand
     default_branch: main
     description: ፨ Parsec is a DHT performance measurement tool
     has_discussions: false
@@ -223,9 +212,6 @@ repositories:
     secret_scanning: true
     squash_merge_commit_message: COMMIT_MESSAGES
     squash_merge_commit_title: COMMIT_OR_PR_TITLE
-    teams:
-      pull:
-        - probelab-core
     visibility: public
   probelab-infra:
     advanced_security: false
@@ -233,7 +219,6 @@ repositories:
     archived: false
     collaborators:
       admin:
-        - dennis-tra
         - pl-deploy-bot
       maintain:
         - BigLep
@@ -250,9 +235,6 @@ repositories:
     secret_scanning: false
     squash_merge_commit_message: PR_BODY
     squash_merge_commit_title: PR_TITLE
-    teams:
-      pull:
-        - probelab-core
     visibility: private
   roadmap:
     advanced_security: false
@@ -272,18 +254,12 @@ repositories:
     secret_scanning: true
     squash_merge_commit_message: COMMIT_MESSAGES
     squash_merge_commit_title: COMMIT_OR_PR_TITLE
-    teams:
-      pull:
-        - probelab-core
     visibility: public
   thunderdome:
     advanced_security: false
     allow_update_branch: false
     archived: false
     collaborators:
-      admin:
-        - iand
-        - thattommyhall
       push:
         - web3-bot
     default_branch: main
@@ -294,18 +270,11 @@ repositories:
     secret_scanning: true
     squash_merge_commit_message: COMMIT_MESSAGES
     squash_merge_commit_title: COMMIT_OR_PR_TITLE
-    teams:
-      pull:
-        - probelab-core
     visibility: public
   tiros:
     advanced_security: false
     allow_update_branch: false
     archived: false
-    collaborators:
-      admin:
-        - dennis-tra
-        - iand
     default_branch: main
     description: 🌐 An IPFS website measurement tool
     has_discussions: false
@@ -315,9 +284,6 @@ repositories:
     secret_scanning: true
     squash_merge_commit_message: COMMIT_MESSAGES
     squash_merge_commit_title: COMMIT_OR_PR_TITLE
-    teams:
-      pull:
-        - probelab-core
     topics:
       - golang
       - ipfs
@@ -329,8 +295,6 @@ repositories:
     allow_update_branch: false
     archived: false
     collaborators:
-      admin:
-        - iand
       push:
         - web3-bot
     default_branch: main
@@ -343,9 +307,6 @@ repositories:
     secret_scanning: true
     squash_merge_commit_message: COMMIT_MESSAGES
     squash_merge_commit_title: COMMIT_OR_PR_TITLE
-    teams:
-      admin:
-        - probelab-core
     visibility: public
   website:
     advanced_security: false
@@ -362,9 +323,6 @@ repositories:
     secret_scanning: true
     squash_merge_commit_message: COMMIT_MESSAGES
     squash_merge_commit_title: COMMIT_OR_PR_TITLE
-    teams:
-      admin:
-        - probelab-core
     topics:
       - ipfs
     visibility: public
@@ -398,9 +356,6 @@ repositories:
     secret_scanning: true
     squash_merge_commit_message: PR_BODY
     squash_merge_commit_title: PR_TITLE
-    teams:
-      admin:
-        - probelab-core
     topics:
       - golang
       - ipfs
