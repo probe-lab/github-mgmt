@@ -5,7 +5,6 @@
 members:
   admin:
     - dennis-tra
-    - galargh
     - guillaumemichel
     - iand
     - yiannisbot
@@ -13,14 +12,22 @@ members:
     - probelab-cmi
     - web3-bot
 repositories:
+  .github:
+    advanced_security: false
+    allow_update_branch: false
+    has_discussions: false
+    merge_commit_message: PR_TITLE
+    merge_commit_title: MERGE_MESSAGE
+    secret_scanning_push_protection: true
+    secret_scanning: true
+    squash_merge_commit_message: COMMIT_MESSAGES
+    squash_merge_commit_title: COMMIT_OR_PR_TITLE
   ashby:
     advanced_security: false
     allow_update_branch: false
-    archived: false
     collaborators:
       push:
         - web3-bot
-    default_branch: main
     has_discussions: false
     merge_commit_message: PR_TITLE
     merge_commit_title: MERGE_MESSAGE
@@ -28,31 +35,12 @@ repositories:
     secret_scanning: true
     squash_merge_commit_message: COMMIT_MESSAGES
     squash_merge_commit_title: COMMIT_OR_PR_TITLE
-    visibility: public
   boomo:
     advanced_security: false
-    allow_update_branch: false
-    archived: false
-    default_branch: main
-    description: 💥 A Bootstrap Monitor
-    has_discussions: false
-    merge_commit_message: PR_TITLE
-    merge_commit_title: MERGE_MESSAGE
-    secret_scanning_push_protection: true
-    secret_scanning: true
-    squash_merge_commit_message: COMMIT_MESSAGES
-    squash_merge_commit_title: COMMIT_OR_PR_TITLE
-    visibility: public
-  caracol:
-    advanced_security: false
-    allow_update_branch: false
-    archived: false
+    allow_update_branch: true
     collaborators:
       push:
         - web3-bot
-    default_branch: main
-    description: Caracol is a service for aggregating time series from external data
-      systems.
     has_discussions: false
     merge_commit_message: PR_TITLE
     merge_commit_title: MERGE_MESSAGE
@@ -60,21 +48,26 @@ repositories:
     secret_scanning: true
     squash_merge_commit_message: COMMIT_MESSAGES
     squash_merge_commit_title: COMMIT_OR_PR_TITLE
-    visibility: public
+  caracol:
+    advanced_security: false
+    allow_update_branch: true
+    collaborators:
+      push:
+        - web3-bot
+    has_discussions: false
+    merge_commit_message: PR_TITLE
+    merge_commit_title: MERGE_MESSAGE
+    secret_scanning_push_protection: true
+    secret_scanning: true
+    squash_merge_commit_message: COMMIT_MESSAGES
+    squash_merge_commit_title: COMMIT_OR_PR_TITLE
   github-mgmt:
     advanced_security: false
-    allow_update_branch: false
-    archived: false
+    allow_update_branch: true
     branch_protection:
       master:
-        allows_deletions: false
-        allows_force_pushes: false
         blocks_creations: false
-        enforce_admins: false
         lock_branch: false
-        require_conversation_resolution: false
-        require_signed_commits: false
-        required_linear_history: false
         required_pull_request_reviews:
           dismiss_stale_reviews: false
           require_code_owner_reviews: false
@@ -82,7 +75,6 @@ repositories:
           restrict_dismissals: false
         required_status_checks:
           strict: true
-    default_branch: master
     has_discussions: false
     merge_commit_message: PR_TITLE
     merge_commit_title: MERGE_MESSAGE
@@ -90,16 +82,12 @@ repositories:
     secret_scanning: true
     squash_merge_commit_message: COMMIT_MESSAGES
     squash_merge_commit_title: COMMIT_OR_PR_TITLE
-    visibility: public
   go-kademlia:
     advanced_security: false
     allow_update_branch: false
-    archived: false
     collaborators:
       push:
         - web3-bot
-    default_branch: main
-    description: Generic Go Kademlia implementation
     has_discussions: false
     merge_commit_message: PR_TITLE
     merge_commit_title: MERGE_MESSAGE
@@ -107,13 +95,9 @@ repositories:
     secret_scanning: true
     squash_merge_commit_message: PR_BODY
     squash_merge_commit_title: PR_TITLE
-    visibility: public
   go-libdht:
     advanced_security: false
-    allow_update_branch: false
-    archived: false
-    default_branch: main
-    description: Generic Go DHT toolbox
+    allow_update_branch: true
     has_discussions: false
     merge_commit_message: PR_TITLE
     merge_commit_title: MERGE_MESSAGE
@@ -121,13 +105,9 @@ repositories:
     secret_scanning: true
     squash_merge_commit_message: COMMIT_MESSAGES
     squash_merge_commit_title: COMMIT_OR_PR_TITLE
-    visibility: public
   go-libp2p:
     advanced_security: false
     allow_update_branch: false
-    archived: false
-    default_branch: master
-    description: libp2p implementation in Go
     has_discussions: false
     merge_commit_message: PR_TITLE
     merge_commit_title: MERGE_MESSAGE
@@ -135,16 +115,12 @@ repositories:
     secret_scanning: true
     squash_merge_commit_message: COMMIT_MESSAGES
     squash_merge_commit_title: COMMIT_OR_PR_TITLE
-    visibility: public
   hermes:
     advanced_security: false
-    allow_update_branch: false
-    archived: false
+    allow_update_branch: true
     collaborators:
       push:
         - web3-bot
-    default_branch: main
-    description: A Gossipsub listener and tracer.
     has_discussions: false
     merge_commit_message: PR_TITLE
     merge_commit_title: MERGE_MESSAGE
@@ -152,16 +128,12 @@ repositories:
     secret_scanning: true
     squash_merge_commit_message: COMMIT_MESSAGES
     squash_merge_commit_title: COMMIT_OR_PR_TITLE
-    visibility: public
   musa:
     advanced_security: false
-    allow_update_branch: false
-    archived: false
+    allow_update_branch: true
     collaborators:
       push:
         - web3-bot
-    default_branch: main
-    description: 🍌 A lean DHT bootstrapper for any libp2p-based network
     has_discussions: false
     merge_commit_message: PR_TITLE
     merge_commit_title: MERGE_MESSAGE
@@ -169,12 +141,9 @@ repositories:
     secret_scanning: true
     squash_merge_commit_message: COMMIT_MESSAGES
     squash_merge_commit_title: COMMIT_OR_PR_TITLE
-    visibility: public
   nebula-analysis:
     advanced_security: false
-    allow_update_branch: false
-    archived: false
-    default_branch: main
+    allow_update_branch: true
     has_discussions: false
     merge_commit_message: PR_TITLE
     merge_commit_title: MERGE_MESSAGE
@@ -182,12 +151,12 @@ repositories:
     secret_scanning: false
     squash_merge_commit_message: COMMIT_MESSAGES
     squash_merge_commit_title: COMMIT_OR_PR_TITLE
-    visibility: private
   network-measurements:
     advanced_security: false
     allow_update_branch: false
-    archived: false
-    default_branch: master
+    collaborators:
+      push:
+        - probelab-cmi
     has_discussions: false
     merge_commit_message: PR_TITLE
     merge_commit_title: MERGE_MESSAGE
@@ -195,13 +164,12 @@ repositories:
     secret_scanning: true
     squash_merge_commit_message: COMMIT_MESSAGES
     squash_merge_commit_title: COMMIT_OR_PR_TITLE
-    visibility: public
   parsec:
     advanced_security: false
-    allow_update_branch: false
-    archived: false
-    default_branch: main
-    description: ፨ Parsec is a DHT performance measurement tool
+    allow_update_branch: true
+    collaborators:
+      push:
+        - web3-bot
     has_discussions: false
     merge_commit_message: PR_TITLE
     merge_commit_title: MERGE_MESSAGE
@@ -209,11 +177,9 @@ repositories:
     secret_scanning: true
     squash_merge_commit_message: COMMIT_MESSAGES
     squash_merge_commit_title: COMMIT_OR_PR_TITLE
-    visibility: public
   probelab-infra:
     advanced_security: false
     allow_update_branch: true
-    archived: false
     collaborators:
       admin:
         - pl-deploy-bot
@@ -224,7 +190,6 @@ repositories:
       push:
         - lidel
         - SgtPooki
-    default_branch: main
     has_discussions: false
     merge_commit_message: PR_TITLE
     merge_commit_title: MERGE_MESSAGE
@@ -232,18 +197,14 @@ repositories:
     secret_scanning: false
     squash_merge_commit_message: PR_BODY
     squash_merge_commit_title: PR_TITLE
-    visibility: private
   roadmap:
     advanced_security: false
     allow_update_branch: false
-    archived: false
     collaborators:
       admin:
         - yiannisbot
       push:
         - BigLep
-    default_branch: main
-    description: Activities and roadmap for ProbeLab
     has_discussions: false
     merge_commit_message: PR_TITLE
     merge_commit_title: MERGE_MESSAGE
@@ -251,15 +212,12 @@ repositories:
     secret_scanning: true
     squash_merge_commit_message: COMMIT_MESSAGES
     squash_merge_commit_title: COMMIT_OR_PR_TITLE
-    visibility: public
   thunderdome:
     advanced_security: false
-    allow_update_branch: false
-    archived: false
+    allow_update_branch: true
     collaborators:
       push:
         - web3-bot
-    default_branch: main
     has_discussions: false
     merge_commit_message: PR_TITLE
     merge_commit_title: MERGE_MESSAGE
@@ -267,13 +225,12 @@ repositories:
     secret_scanning: true
     squash_merge_commit_message: COMMIT_MESSAGES
     squash_merge_commit_title: COMMIT_OR_PR_TITLE
-    visibility: public
   tiros:
     advanced_security: false
-    allow_update_branch: false
-    archived: false
-    default_branch: main
-    description: 🌐 An IPFS website measurement tool
+    allow_update_branch: true
+    collaborators:
+      push:
+        - web3-bot
     has_discussions: false
     merge_commit_message: PR_TITLE
     merge_commit_title: MERGE_MESSAGE
@@ -286,17 +243,12 @@ repositories:
       - ipfs
       - kademlia
       - libp2p
-    visibility: public
   tracecatcher:
     advanced_security: false
-    allow_update_branch: false
-    archived: false
+    allow_update_branch: true
     collaborators:
       push:
         - web3-bot
-    default_branch: main
-    description: "A utility that listens to pubsub traces produced by Lotus and
-      records them in a Postgresql database. "
     has_discussions: false
     merge_commit_message: PR_TITLE
     merge_commit_title: MERGE_MESSAGE
@@ -304,15 +256,12 @@ repositories:
     secret_scanning: true
     squash_merge_commit_message: COMMIT_MESSAGES
     squash_merge_commit_title: COMMIT_OR_PR_TITLE
-    visibility: public
   website:
     advanced_security: false
     allow_update_branch: false
-    archived: false
     collaborators:
       push:
         - probelab-cmi
-    default_branch: main
     has_discussions: false
     merge_commit_message: PR_TITLE
     merge_commit_title: MERGE_MESSAGE
@@ -322,21 +271,13 @@ repositories:
     squash_merge_commit_title: COMMIT_OR_PR_TITLE
     topics:
       - ipfs
-    visibility: public
   zikade:
     advanced_security: false
     allow_update_branch: true
-    archived: false
     branch_protection:
       main:
-        allows_deletions: false
-        allows_force_pushes: false
         blocks_creations: false
-        enforce_admins: false
         lock_branch: false
-        require_conversation_resolution: false
-        require_signed_commits: false
-        required_linear_history: true
         required_pull_request_reviews:
           dismiss_stale_reviews: false
           require_code_owner_reviews: true
@@ -344,8 +285,6 @@ repositories:
           restrict_dismissals: false
         required_status_checks:
           strict: true
-    default_branch: main
-    description: A Go implementation of the libp2p Kademlia DHT specification
     has_discussions: false
     merge_commit_message: PR_TITLE
     merge_commit_title: MERGE_MESSAGE
@@ -358,20 +297,17 @@ repositories:
       - ipfs
       - kademlia
       - libp2p
-    visibility: public
 teams:
   probelab-bots:
-    description: Bot users that ProbeLab uses to automate their infrastructure
+    create_default_maintainer: false
     members:
       member:
         - probelab-cmi
         - web3-bot
   probelab-core:
-    description: Members of the ProbeLab team
     members:
       maintainer:
         - dennis-tra
         - guillaumemichel
         - iand
         - yiannisbot
-    privacy: closed
