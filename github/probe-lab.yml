@@ -61,6 +61,16 @@ repositories:
     secret_scanning: true
     squash_merge_commit_message: COMMIT_MESSAGES
     squash_merge_commit_title: COMMIT_OR_PR_TITLE
+  erigon:
+    advanced_security: false
+    allow_update_branch: false
+    has_discussions: false
+    merge_commit_message: PR_TITLE
+    merge_commit_title: MERGE_MESSAGE
+    secret_scanning_push_protection: false
+    secret_scanning: false
+    squash_merge_commit_message: COMMIT_MESSAGES
+    squash_merge_commit_title: COMMIT_OR_PR_TITLE
   github-mgmt:
     advanced_security: false
     allow_update_branch: true
@@ -197,6 +207,16 @@ repositories:
     secret_scanning: false
     squash_merge_commit_message: PR_BODY
     squash_merge_commit_title: PR_TITLE
+  prysm:
+    advanced_security: false
+    allow_update_branch: false
+    has_discussions: false
+    merge_commit_message: PR_TITLE
+    merge_commit_title: MERGE_MESSAGE
+    secret_scanning_push_protection: false
+    secret_scanning: false
+    squash_merge_commit_message: COMMIT_MESSAGES
+    squash_merge_commit_title: COMMIT_OR_PR_TITLE
   roadmap:
     advanced_security: false
     allow_update_branch: false
@@ -299,7 +319,6 @@ repositories:
       - libp2p
 teams:
   probelab-bots:
-    create_default_maintainer: false
     members:
       member:
         - probelab-cmi
