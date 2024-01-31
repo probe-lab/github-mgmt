@@ -9,10 +9,10 @@ members:
     - iand
     - yiannisbot
   member:
+    - galargh
+    - laurentsenta
     - probelab-cmi
     - web3-bot
-    - laurentsenta
-    - galargh
 repositories:
   .github:
     advanced_security: false
@@ -326,8 +326,8 @@ teams:
   ipdx:
     members:
       member:
-        - laurentsenta
         - galargh
+        - laurentsenta
   probelab-bots:
     members:
       member:
