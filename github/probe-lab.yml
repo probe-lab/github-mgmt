@@ -11,6 +11,8 @@ members:
   member:
     - probelab-cmi
     - web3-bot
+    - laurentsenta
+    - galargh
 repositories:
   .github:
     advanced_security: false
@@ -92,6 +94,9 @@ repositories:
     secret_scanning: true
     squash_merge_commit_message: COMMIT_MESSAGES
     squash_merge_commit_title: COMMIT_OR_PR_TITLE
+    teams:
+      admin:
+        - ipdx
   go-kademlia:
     advanced_security: false
     allow_update_branch: false
@@ -318,6 +323,11 @@ repositories:
       - kademlia
       - libp2p
 teams:
+  ipdx:
+    members:
+      member:
+        - laurentsenta
+        - galargh
   probelab-bots:
     members:
       member:
