@@ -8,9 +8,9 @@ members:
     - guillaumemichel
     - iand
     - yiannisbot
-  member:
     - galargh
     - laurentsenta
+  member:
     - probelab-cmi
     - web3-bot
 repositories:
