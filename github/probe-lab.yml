@@ -5,12 +5,12 @@
 members:
   admin:
     - dennis-tra
+    - galargh
     - guillaumemichel
     - iand
+    - laurentsenta
     - yiannisbot
   member:
-    - galargh
-    - laurentsenta
     - probelab-cmi
     - web3-bot
 repositories:
