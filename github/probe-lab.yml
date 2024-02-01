@@ -5,11 +5,11 @@
 members:
   admin:
     - dennis-tra
+    - galargh
     - guillaumemichel
     - iand
-    - yiannisbot
-    - galargh
     - laurentsenta
+    - yiannisbot
   member:
     - probelab-cmi
     - web3-bot
