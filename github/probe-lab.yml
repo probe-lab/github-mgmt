@@ -242,6 +242,7 @@ repositories:
     allow_update_branch: true
     collaborators:
       push:
+        - hacdias
         - web3-bot
     has_discussions: false
     merge_commit_message: PR_TITLE
