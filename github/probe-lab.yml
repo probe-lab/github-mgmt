@@ -11,6 +11,7 @@ members:
     - laurentsenta
     - yiannisbot
   member:
+    - cortze
     - probelab-cmi
     - web3-bot
 repositories:
@@ -336,3 +337,5 @@ teams:
         - guillaumemichel
         - iand
         - yiannisbot
+      member:
+        - cortze
