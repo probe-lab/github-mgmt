@@ -1,12 +1,5 @@
 resource "github_membership" "this" {
-  for_each = {
-    for item in [
-      for member, config in local.resources.config.github_membership.this : {
-        source = "config"
-        index  = member
-      }
-    ] : item.index => local.resources[item.source].github_membership.this[item.index]
-  }
+  for_each = local.resources.github_membership
 
   username = each.value.username
   role     = each.value.role
@@ -18,18 +11,7 @@ resource "github_membership" "this" {
 }
 
 resource "github_repository" "this" {
-  for_each = {
-    for item in [
-      for repository, config in local.resources.config.github_repository.this :
-      try(config.archived, false) ? {
-        source = "state"
-        index  = repository
-        } : {
-        source = "config"
-        index  = repository
-      }
-    ] : item.index => local.resources[item.source].github_repository.this[item.index]
-  }
+  for_each = local.resources.github_repository
 
   name                                    = each.value.name
   allow_auto_merge                        = try(each.value.allow_auto_merge, null)
@@ -114,23 +96,7 @@ resource "github_repository" "this" {
 }
 
 resource "github_repository_collaborator" "this" {
-  for_each = {
-    for item in flatten([
-      for repository, config in local.resources.config.github_repository.this : flatten([
-        try(config.archived, false) ? [
-          for member, config in try(local.resources.state.github_repository_collaborator.this, {}) : {
-            source = "state"
-            index  = member
-          } if lower(config.repository) == repository
-          ] : [
-          for member, config in local.resources.config.github_repository_collaborator.this : {
-            source = "config"
-            index  = member
-          } if lower(config.repository) == repository
-        ]
-      ])
-    ]) : item.index => local.resources[item.source].github_repository_collaborator.this[item.index]
-  }
+  for_each = local.resources.github_repository_collaborator
 
   depends_on = [github_repository.this]
 
@@ -144,27 +110,11 @@ resource "github_repository_collaborator" "this" {
 }
 
 resource "github_branch_protection" "this" {
-  for_each = {
-    for item in flatten([
-      for repository, config in local.resources.config.github_repository.this : flatten([
-        try(config.archived, false) ? [
-          for branch_protection, config in try(local.resources.state.github_branch_protection.this, {}) : {
-            source = "state"
-            index  = branch_protection
-          } if split(":", branch_protection)[0] == repository
-          ] : [
-          for branch_protection, config in local.resources.config.github_branch_protection.this : {
-            source = "config"
-            index  = branch_protection
-          } if lower(config.repository) == repository
-        ]
-      ])
-    ]) : item.index => local.resources[item.source].github_branch_protection.this[item.index]
-  }
+  for_each = local.resources.github_branch_protection
 
   pattern = each.value.pattern
 
-  repository_id = try(each.value.repository_id, github_repository.this[lower(each.value.repository)].node_id)
+  repository_id = lookup(each.value, "repository_id", lookup(lookup(github_repository.this, lower(lookup(each.value, "repository", "")), {}), "node_id", null))
 
   allows_deletions                = try(each.value.allows_deletions, null)
   allows_force_pushes             = try(each.value.allows_force_pushes, null)
@@ -197,14 +147,7 @@ resource "github_branch_protection" "this" {
 }
 
 resource "github_team" "this" {
-  for_each = {
-    for item in [
-      for team, config in local.resources.config.github_team.this : {
-        source = "config"
-        index  = team
-      }
-    ] : item.index => local.resources[item.source].github_team.this[item.index]
-  }
+  for_each = local.resources.github_team
 
   name = each.value.name
 
@@ -219,30 +162,14 @@ resource "github_team" "this" {
 }
 
 resource "github_team_repository" "this" {
-  for_each = {
-    for item in flatten([
-      for repository, config in local.resources.config.github_repository.this : flatten([
-        try(config.archived, false) ? [
-          for team, config in try(local.resources.state.github_team_repository.this, {}) : {
-            source = "state"
-            index  = team
-          } if lower(config.repository) == repository
-          ] : [
-          for team, config in local.resources.config.github_team_repository.this : {
-            source = "config"
-            index  = team
-          } if lower(config.repository) == repository
-        ]
-      ])
-    ]) : item.index => local.resources[item.source].github_team_repository.this[item.index]
-  }
+  for_each = local.resources.github_team_repository
 
   depends_on = [github_repository.this]
 
   repository = each.value.repository
   permission = each.value.permission
 
-  team_id = try(each.value.team_id, github_team.this[lower(each.value.team)].id)
+  team_id = lookup(each.value, "team_id", lookup(lookup(github_team.this, lower(lookup(each.value, "team", "")), {}), "id", null))
 
   lifecycle {
     ignore_changes = []
@@ -250,19 +177,12 @@ resource "github_team_repository" "this" {
 }
 
 resource "github_team_membership" "this" {
-  for_each = {
-    for item in [
-      for member, config in local.resources.config.github_team_membership.this : {
-        source = "config"
-        index  = member
-      }
-    ] : item.index => local.resources[item.source].github_team_membership.this[item.index]
-  }
+  for_each = local.resources.github_team_membership
 
   username = each.value.username
   role     = each.value.role
 
-  team_id = try(each.value.team_id, github_team.this[lower(each.value.team)].id)
+  team_id = lookup(each.value, "team_id", lookup(lookup(github_team.this, lower(lookup(each.value, "team", "")), {}), "id", null))
 
   lifecycle {
     ignore_changes = []
@@ -270,30 +190,14 @@ resource "github_team_membership" "this" {
 }
 
 resource "github_repository_file" "this" {
-  for_each = {
-    for item in flatten([
-      for repository, config in local.resources.config.github_repository.this : flatten([
-        try(config.archived, false) ? [
-          for file, config in try(local.resources.state.github_repository_file.this, {}) : {
-            source = "state"
-            index  = file
-          } if lower(config.repository) == repository
-          ] : [
-          for file, config in local.resources.config.github_repository_file.this : {
-            source = try(local.resources.state.github_repository_file.this[file].content, "") == try(config.content, "") ? "state" : "config"
-            index  = file
-          } if lower(config.repository) == repository
-        ]
-      ])
-    ]) : item.index => local.resources[item.source].github_repository_file.this[item.index]
-  }
+  for_each = local.resources.github_repository_file
 
   repository = each.value.repository
   file       = each.value.file
   content    = each.value.content
   # Since 5.25.0 the branch attribute defaults to the default branch of the repository
   # branch              = try(each.value.branch, null)
-  branch              = try(each.value.branch, github_repository.this[each.value.repository].default_branch)
+  branch              = lookup(each.value, "branch", lookup(lookup(github_repository.this, each.value.repository, {}), "default_branch", null))
   overwrite_on_create = try(each.value.overwrite_on_create, true)
   # Keep the defaults from 4.x
   commit_author  = try(each.value.commit_author, "GitHub")
@@ -306,23 +210,7 @@ resource "github_repository_file" "this" {
 }
 
 resource "github_issue_label" "this" {
-  for_each = {
-    for item in flatten([
-      for repository, config in local.resources.config.github_repository.this : flatten([
-        try(config.archived, false) ? [
-          for label, config in try(local.resources.state.github_issue_label.this, {}) : {
-            source = "state"
-            index  = label
-          } if lower(config.repository) == repository
-          ] : [
-          for label, config in local.resources.config.github_issue_label.this : {
-            source = "config"
-            index  = label
-          } if lower(config.repository) == repository
-        ]
-      ])
-    ]) : item.index => local.resources[item.source].github_issue_label.this[item.index]
-  }
+  for_each = local.resources.github_issue_label
 
   depends_on = [github_repository.this]
 
