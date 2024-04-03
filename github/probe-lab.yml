@@ -18,6 +18,7 @@ repositories:
   .github:
     advanced_security: false
     allow_update_branch: false
+    archived: false
     has_discussions: false
     merge_commit_message: PR_TITLE
     merge_commit_title: MERGE_MESSAGE
@@ -28,6 +29,7 @@ repositories:
   ashby:
     advanced_security: false
     allow_update_branch: false
+    archived: false
     collaborators:
       push:
         - web3-bot
@@ -41,6 +43,7 @@ repositories:
   boomo:
     advanced_security: false
     allow_update_branch: true
+    archived: false
     collaborators:
       push:
         - web3-bot
@@ -54,6 +57,7 @@ repositories:
   caracol:
     advanced_security: false
     allow_update_branch: true
+    archived: false
     collaborators:
       push:
         - web3-bot
@@ -67,6 +71,7 @@ repositories:
   erigon:
     advanced_security: false
     allow_update_branch: false
+    archived: false
     has_discussions: false
     merge_commit_message: PR_TITLE
     merge_commit_title: MERGE_MESSAGE
@@ -77,6 +82,7 @@ repositories:
   github-mgmt:
     advanced_security: false
     allow_update_branch: true
+    archived: false
     branch_protection:
       master:
         blocks_creations: false
@@ -101,6 +107,7 @@ repositories:
   go-kademlia:
     advanced_security: false
     allow_update_branch: false
+    archived: false
     collaborators:
       push:
         - web3-bot
@@ -114,6 +121,7 @@ repositories:
   go-libdht:
     advanced_security: false
     allow_update_branch: true
+    archived: false
     has_discussions: false
     merge_commit_message: PR_TITLE
     merge_commit_title: MERGE_MESSAGE
@@ -124,6 +132,7 @@ repositories:
   go-libp2p:
     advanced_security: false
     allow_update_branch: false
+    archived: false
     has_discussions: false
     merge_commit_message: PR_TITLE
     merge_commit_title: MERGE_MESSAGE
@@ -134,6 +143,7 @@ repositories:
   hermes:
     advanced_security: false
     allow_update_branch: true
+    archived: false
     collaborators:
       push:
         - web3-bot
@@ -147,6 +157,7 @@ repositories:
   musa:
     advanced_security: false
     allow_update_branch: true
+    archived: false
     collaborators:
       push:
         - web3-bot
@@ -160,6 +171,7 @@ repositories:
   nebula-analysis:
     advanced_security: false
     allow_update_branch: true
+    archived: false
     has_discussions: false
     merge_commit_message: PR_TITLE
     merge_commit_title: MERGE_MESSAGE
@@ -170,6 +182,7 @@ repositories:
   network-measurements:
     advanced_security: false
     allow_update_branch: false
+    archived: false
     collaborators:
       push:
         - probelab-cmi
@@ -183,6 +196,7 @@ repositories:
   parsec:
     advanced_security: false
     allow_update_branch: true
+    archived: false
     has_discussions: false
     merge_commit_message: PR_TITLE
     merge_commit_title: MERGE_MESSAGE
@@ -193,6 +207,7 @@ repositories:
   probelab-infra:
     advanced_security: false
     allow_update_branch: true
+    archived: false
     collaborators:
       admin:
         - pl-deploy-bot
@@ -214,6 +229,7 @@ repositories:
   prysm:
     advanced_security: false
     allow_update_branch: false
+    archived: false
     has_discussions: false
     merge_commit_message: PR_TITLE
     merge_commit_title: MERGE_MESSAGE
@@ -224,6 +240,7 @@ repositories:
   roadmap:
     advanced_security: false
     allow_update_branch: false
+    archived: false
     collaborators:
       admin:
         - yiannisbot
@@ -239,6 +256,7 @@ repositories:
   thunderdome:
     advanced_security: false
     allow_update_branch: true
+    archived: false
     collaborators:
       push:
         - hacdias
@@ -253,6 +271,7 @@ repositories:
   tiros:
     advanced_security: false
     allow_update_branch: true
+    archived: false
     has_discussions: false
     merge_commit_message: PR_TITLE
     merge_commit_title: MERGE_MESSAGE
@@ -268,6 +287,7 @@ repositories:
   tracecatcher:
     advanced_security: false
     allow_update_branch: true
+    archived: false
     collaborators:
       push:
         - web3-bot
@@ -281,6 +301,7 @@ repositories:
   website:
     advanced_security: false
     allow_update_branch: false
+    archived: false
     collaborators:
       push:
         - probelab-cmi
@@ -296,6 +317,7 @@ repositories:
   zikade:
     advanced_security: false
     allow_update_branch: true
+    archived: false
     branch_protection:
       main:
         blocks_creations: false
@@ -333,9 +355,8 @@ teams:
   probelab-core:
     members:
       maintainer:
+        - cortze
         - dennis-tra
         - guillaumemichel
         - iand
         - yiannisbot
-      member:
-        - cortze
