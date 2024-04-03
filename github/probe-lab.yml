@@ -4,6 +4,7 @@
 
 members:
   admin:
+    - cortze
     - dennis-tra
     - galargh
     - guillaumemichel
@@ -11,7 +12,6 @@ members:
     - laurentsenta
     - yiannisbot
   member:
-    - cortze
     - probelab-cmi
     - web3-bot
 repositories:
