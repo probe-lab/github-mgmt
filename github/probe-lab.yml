@@ -215,9 +215,9 @@ repositories:
       maintain:
         - BigLep
       pull:
-        - kasteph
         - whizzzkid
       push:
+        - kasteph
         - lidel
         - SgtPooki
     has_discussions: false
