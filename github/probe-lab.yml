@@ -216,7 +216,6 @@ repositories:
         - BigLep
       pull:
         - achingbrain
-        - whizzzkid
       push:
         - kasteph
         - lidel
