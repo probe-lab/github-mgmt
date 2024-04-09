@@ -215,8 +215,8 @@ repositories:
       maintain:
         - BigLep
       pull:
-        - whizzzkid
         - achingbrain
+        - whizzzkid
       push:
         - kasteph
         - lidel
