@@ -102,6 +102,7 @@ repositories:
     archived: false
     collaborators:
       push:
+        - lidel
         - web3-bot
     has_discussions: false
     merge_commit_message: PR_TITLE
