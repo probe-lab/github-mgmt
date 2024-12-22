@@ -54,8 +54,8 @@ repositories:
     allow_update_branch: true
     archived: false
     has_discussions: false
-    merge_commit_message: PR_TITLE
-    merge_commit_title: MERGE_MESSAGE
+    merge_commit_message: PR_BODY
+    merge_commit_title: PR_TITLE
     secret_scanning_push_protection: false
     secret_scanning: false
     squash_merge_commit_message: COMMIT_MESSAGES
@@ -65,12 +65,12 @@ repositories:
     allow_update_branch: true
     archived: false
     has_discussions: false
-    merge_commit_message: PR_TITLE
-    merge_commit_title: MERGE_MESSAGE
+    merge_commit_message: PR_BODY
+    merge_commit_title: PR_TITLE
     secret_scanning_push_protection: false
     secret_scanning: false
     squash_merge_commit_message: COMMIT_MESSAGES
-    squash_merge_commit_title: COMMIT_OR_PR_TITLE
+    squash_merge_commit_title: PR_TITLE
   ashby:
     advanced_security: false
     allow_update_branch: false
