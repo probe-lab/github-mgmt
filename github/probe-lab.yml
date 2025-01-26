@@ -149,7 +149,7 @@ repositories:
     squash_merge_commit_title: COMMIT_OR_PR_TITLE
   data-platform:
     advanced_security: false
-    allow_update_branch: false
+    allow_update_branch: true
     archived: false
     has_discussions: false
     merge_commit_message: PR_TITLE
