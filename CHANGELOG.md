@@ -22,6 +22,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - new args for repositories and branch protection rules
 
 ### Changed
+- Updated the signatures of all the shared actions; now the runAction function will persist the changes to disk while action functions will operate on the in-memory state
 - Synchronization script: to use GitHub API directly instead of relying on TF GH Provider's Data Sources
 - Configuration: replaced multiple JSONs with a single, unified YAML
 - Synchronization script: rewrote the script in JS
@@ -46,6 +47,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - updated upload and download artifacts actions to v4
 
 ### Fixed
+- fixed how terraform state is accessed before it the initial synchronization
 - links to supported resources in HOWTOs
 - posting PR comments when terraform plan output is very long
 - PR parsing in the update workflow
