@@ -1,9 +1,9 @@
 import 'reflect-metadata'
-import {Repository} from '../resources/repository'
-import {runFormat} from './shared/format'
-import {runSetPropertyInAllRepos} from './shared/set-property-in-all-repos'
-import {runToggleArchivedRepos} from './shared/toggle-archived-repos'
-import {runDescribeAccessChanges} from './shared/describe-access-changes'
+import {Repository} from '../resources/repository.js'
+import {runFormat} from './shared/format.js'
+import {runSetPropertyInAllRepos} from './shared/set-property-in-all-repos.js'
+import {runToggleArchivedRepos} from './shared/toggle-archived-repos.js'
+import {runDescribeAccessChanges} from './shared/describe-access-changes.js'
 
 import * as core from '@actions/core'
 
