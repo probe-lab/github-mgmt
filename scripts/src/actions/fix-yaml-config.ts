@@ -1,6 +1,8 @@
 import 'reflect-metadata'
 import {Repository} from '../resources/repository.js'
+import {Permission} from '../resources/repository-collaborator.js'
 import {runFormat} from './shared/format.js'
+import {runAddCollaboratorToAllRepos} from './shared/add-collaborator-to-all-repos.js'
 import {runSetPropertyInAllRepos} from './shared/set-property-in-all-repos.js'
 import {runToggleArchivedRepos} from './shared/toggle-archived-repos.js'
 import {runDescribeAccessChanges} from './shared/describe-access-changes.js'
@@ -21,6 +23,10 @@ async function run() {
     'secret_scanning_push_protection',
     true,
     r => isPublic(r)
+  )
+  await runAddCollaboratorToAllRepos(
+    'web3-bot',
+    Permission.Push
   )
   await runToggleArchivedRepos()
   const accessChangesDescription = await runDescribeAccessChanges()
