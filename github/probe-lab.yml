@@ -1,1 +1,623 @@
-{}
+members:
+  admin:
+    - cortze
+    - dennis-tra
+    - galargh
+    - guillaumemichel
+    - iand
+    - kasteph
+    - laurentsenta
+    - yiannisbot
+  member:
+    - probelab-cmi
+    - web3-bot
+repositories:
+  .github:
+    advanced_security: false
+    allow_update_branch: false
+    archived: false
+    collaborators:
+      push:
+        - web3-bot
+    has_discussions: false
+    merge_commit_message: PR_TITLE
+    merge_commit_title: MERGE_MESSAGE
+    secret_scanning_push_protection: true
+    secret_scanning: true
+    squash_merge_commit_message: COMMIT_MESSAGES
+    squash_merge_commit_title: COMMIT_OR_PR_TITLE
+  akai:
+    advanced_security: false
+    allow_update_branch: false
+    archived: false
+    collaborators:
+      push:
+        - web3-bot
+    has_discussions: false
+    merge_commit_message: PR_TITLE
+    merge_commit_title: MERGE_MESSAGE
+    secret_scanning_push_protection: false
+    secret_scanning: false
+    squash_merge_commit_message: COMMIT_MESSAGES
+    squash_merge_commit_title: COMMIT_OR_PR_TITLE
+  antikythera:
+    advanced_security: false
+    allow_update_branch: false
+    archived: false
+    collaborators:
+      push:
+        - web3-bot
+    has_discussions: false
+    merge_commit_message: PR_TITLE
+    merge_commit_title: MERGE_MESSAGE
+    secret_scanning_push_protection: false
+    secret_scanning: false
+    squash_merge_commit_message: COMMIT_MESSAGES
+    squash_merge_commit_title: COMMIT_OR_PR_TITLE
+  ants-watch:
+    advanced_security: false
+    allow_update_branch: true
+    archived: false
+    collaborators:
+      push:
+        - web3-bot
+    has_discussions: false
+    merge_commit_message: PR_BODY
+    merge_commit_title: PR_TITLE
+    secret_scanning_push_protection: false
+    secret_scanning: false
+    squash_merge_commit_message: COMMIT_MESSAGES
+    squash_merge_commit_title: COMMIT_OR_PR_TITLE
+  api:
+    advanced_security: false
+    allow_update_branch: true
+    archived: false
+    collaborators:
+      push:
+        - web3-bot
+    has_discussions: false
+    merge_commit_message: PR_BODY
+    merge_commit_title: PR_TITLE
+    secret_scanning_push_protection: false
+    secret_scanning: false
+    squash_merge_commit_message: COMMIT_MESSAGES
+    squash_merge_commit_title: PR_TITLE
+  ashby:
+    advanced_security: false
+    allow_update_branch: false
+    archived: false
+    collaborators:
+      push:
+        - web3-bot
+    has_discussions: false
+    merge_commit_message: PR_TITLE
+    merge_commit_title: MERGE_MESSAGE
+    secret_scanning_push_protection: true
+    secret_scanning: true
+    squash_merge_commit_message: COMMIT_MESSAGES
+    squash_merge_commit_title: COMMIT_OR_PR_TITLE
+  avail-light:
+    advanced_security: false
+    allow_update_branch: false
+    archived: false
+    collaborators:
+      push:
+        - web3-bot
+    has_discussions: false
+    merge_commit_message: PR_TITLE
+    merge_commit_title: MERGE_MESSAGE
+    secret_scanning_push_protection: true
+    secret_scanning: true
+    squash_merge_commit_message: COMMIT_MESSAGES
+    squash_merge_commit_title: COMMIT_OR_PR_TITLE
+  blob-tx-hit-rate-report:
+    advanced_security: false
+    allow_update_branch: false
+    archived: false
+    collaborators:
+      push:
+        - samcm
+        - Savid
+        - web3-bot
+    has_discussions: false
+    merge_commit_message: PR_TITLE
+    merge_commit_title: MERGE_MESSAGE
+    secret_scanning_push_protection: false
+    secret_scanning: false
+    squash_merge_commit_message: COMMIT_MESSAGES
+    squash_merge_commit_title: COMMIT_OR_PR_TITLE
+  boomo:
+    advanced_security: false
+    allow_update_branch: true
+    archived: false
+    collaborators:
+      push:
+        - lidel
+        - web3-bot
+    has_discussions: false
+    merge_commit_message: PR_TITLE
+    merge_commit_title: MERGE_MESSAGE
+    secret_scanning_push_protection: false
+    secret_scanning: false
+    squash_merge_commit_message: COMMIT_MESSAGES
+    squash_merge_commit_title: COMMIT_OR_PR_TITLE
+  btcd:
+    advanced_security: false
+    allow_update_branch: false
+    archived: false
+    collaborators:
+      push:
+        - web3-bot
+    has_discussions: false
+    merge_commit_message: PR_TITLE
+    merge_commit_title: MERGE_MESSAGE
+    secret_scanning_push_protection: true
+    secret_scanning: true
+    squash_merge_commit_message: COMMIT_MESSAGES
+    squash_merge_commit_title: COMMIT_OR_PR_TITLE
+  caracol:
+    advanced_security: false
+    allow_update_branch: true
+    archived: false
+    collaborators:
+      push:
+        - web3-bot
+    has_discussions: false
+    merge_commit_message: PR_TITLE
+    merge_commit_title: MERGE_MESSAGE
+    secret_scanning_push_protection: true
+    secret_scanning: true
+    squash_merge_commit_message: COMMIT_MESSAGES
+    squash_merge_commit_title: COMMIT_OR_PR_TITLE
+  celenium-api-exchange:
+    advanced_security: false
+    allow_update_branch: false
+    archived: false
+    collaborators:
+      push:
+        - web3-bot
+    has_discussions: false
+    merge_commit_message: PR_TITLE
+    merge_commit_title: MERGE_MESSAGE
+    secret_scanning_push_protection: true
+    secret_scanning: true
+    squash_merge_commit_message: COMMIT_MESSAGES
+    squash_merge_commit_title: COMMIT_OR_PR_TITLE
+  celestia-dht-scripts:
+    advanced_security: false
+    allow_update_branch: false
+    archived: false
+    collaborators:
+      push:
+        - web3-bot
+    has_discussions: false
+    merge_commit_message: PR_TITLE
+    merge_commit_title: MERGE_MESSAGE
+    secret_scanning_push_protection: false
+    secret_scanning: false
+    squash_merge_commit_message: COMMIT_MESSAGES
+    squash_merge_commit_title: COMMIT_OR_PR_TITLE
+  data-platform:
+    advanced_security: false
+    allow_update_branch: true
+    archived: false
+    collaborators:
+      push:
+        - web3-bot
+    has_discussions: false
+    merge_commit_message: PR_TITLE
+    merge_commit_title: MERGE_MESSAGE
+    secret_scanning_push_protection: false
+    secret_scanning: false
+    squash_merge_commit_message: COMMIT_MESSAGES
+    squash_merge_commit_title: COMMIT_OR_PR_TITLE
+  design:
+    advanced_security: false
+    allow_update_branch: false
+    archived: false
+    collaborators:
+      push:
+        - web3-bot
+    has_discussions: false
+    merge_commit_message: PR_TITLE
+    merge_commit_title: MERGE_MESSAGE
+    secret_scanning_push_protection: false
+    secret_scanning: false
+    squash_merge_commit_message: COMMIT_MESSAGES
+    squash_merge_commit_title: COMMIT_OR_PR_TITLE
+  erigon:
+    advanced_security: false
+    allow_update_branch: false
+    archived: false
+    collaborators:
+      push:
+        - web3-bot
+    has_discussions: false
+    merge_commit_message: PR_TITLE
+    merge_commit_title: MERGE_MESSAGE
+    secret_scanning_push_protection: false
+    secret_scanning: false
+    squash_merge_commit_message: COMMIT_MESSAGES
+    squash_merge_commit_title: COMMIT_OR_PR_TITLE
+  github-mgmt:
+    advanced_security: false
+    allow_update_branch: true
+    archived: false
+    branch_protection:
+      master:
+        blocks_creations: false
+        lock_branch: false
+        required_pull_request_reviews:
+          dismiss_stale_reviews: false
+          require_code_owner_reviews: false
+          required_approving_review_count: 1
+          restrict_dismissals: false
+        required_status_checks:
+          strict: true
+    collaborators:
+      push:
+        - web3-bot
+    has_discussions: false
+    merge_commit_message: PR_TITLE
+    merge_commit_title: MERGE_MESSAGE
+    secret_scanning_push_protection: true
+    secret_scanning: true
+    squash_merge_commit_message: COMMIT_MESSAGES
+    squash_merge_commit_title: COMMIT_OR_PR_TITLE
+    teams:
+      admin:
+        - ipdx
+  go-ethereum:
+    advanced_security: false
+    allow_update_branch: false
+    archived: false
+    collaborators:
+      push:
+        - web3-bot
+    has_discussions: false
+    merge_commit_message: PR_TITLE
+    merge_commit_title: MERGE_MESSAGE
+    secret_scanning_push_protection: true
+    secret_scanning: true
+    squash_merge_commit_message: COMMIT_MESSAGES
+    squash_merge_commit_title: COMMIT_OR_PR_TITLE
+  go-kademlia:
+    advanced_security: false
+    allow_update_branch: false
+    archived: false
+    collaborators:
+      push:
+        - web3-bot
+    has_discussions: false
+    merge_commit_message: PR_TITLE
+    merge_commit_title: MERGE_MESSAGE
+    secret_scanning_push_protection: true
+    secret_scanning: true
+    squash_merge_commit_message: PR_BODY
+    squash_merge_commit_title: PR_TITLE
+  go-libdht:
+    advanced_security: false
+    allow_update_branch: true
+    archived: false
+    collaborators:
+      push:
+        - web3-bot
+    has_discussions: false
+    merge_commit_message: PR_TITLE
+    merge_commit_title: MERGE_MESSAGE
+    secret_scanning_push_protection: true
+    secret_scanning: true
+    squash_merge_commit_message: COMMIT_MESSAGES
+    squash_merge_commit_title: COMMIT_OR_PR_TITLE
+  go-libp2p-kad-dht:
+    advanced_security: false
+    allow_update_branch: false
+    archived: false
+    collaborators:
+      push:
+        - web3-bot
+    has_discussions: false
+    merge_commit_message: PR_TITLE
+    merge_commit_title: MERGE_MESSAGE
+    secret_scanning_push_protection: true
+    secret_scanning: true
+    squash_merge_commit_message: COMMIT_MESSAGES
+    squash_merge_commit_title: COMMIT_OR_PR_TITLE
+  go-libp2p:
+    advanced_security: false
+    allow_update_branch: false
+    archived: false
+    collaborators:
+      push:
+        - web3-bot
+    has_discussions: false
+    merge_commit_message: PR_TITLE
+    merge_commit_title: MERGE_MESSAGE
+    secret_scanning_push_protection: true
+    secret_scanning: true
+    squash_merge_commit_message: COMMIT_MESSAGES
+    squash_merge_commit_title: COMMIT_OR_PR_TITLE
+  gossips:
+    advanced_security: false
+    allow_update_branch: false
+    archived: false
+    collaborators:
+      push:
+        - web3-bot
+    has_discussions: false
+    merge_commit_message: PR_TITLE
+    merge_commit_title: MERGE_MESSAGE
+    secret_scanning_push_protection: false
+    secret_scanning: false
+    squash_merge_commit_message: COMMIT_MESSAGES
+    squash_merge_commit_title: COMMIT_OR_PR_TITLE
+  hermes:
+    advanced_security: false
+    allow_update_branch: true
+    archived: false
+    collaborators:
+      push:
+        - web3-bot
+    has_discussions: false
+    merge_commit_message: PR_TITLE
+    merge_commit_title: MERGE_MESSAGE
+    secret_scanning_push_protection: true
+    secret_scanning: true
+    squash_merge_commit_message: COMMIT_MESSAGES
+    squash_merge_commit_title: COMMIT_OR_PR_TITLE
+  mercury:
+    advanced_security: false
+    allow_update_branch: false
+    archived: false
+    collaborators:
+      push:
+        - web3-bot
+    has_discussions: false
+    merge_commit_message: PR_TITLE
+    merge_commit_title: MERGE_MESSAGE
+    secret_scanning_push_protection: false
+    secret_scanning: false
+    squash_merge_commit_message: COMMIT_MESSAGES
+    squash_merge_commit_title: COMMIT_OR_PR_TITLE
+  musa:
+    advanced_security: false
+    allow_update_branch: true
+    archived: false
+    collaborators:
+      push:
+        - web3-bot
+    has_discussions: false
+    merge_commit_message: PR_TITLE
+    merge_commit_title: MERGE_MESSAGE
+    secret_scanning_push_protection: true
+    secret_scanning: true
+    squash_merge_commit_message: COMMIT_MESSAGES
+    squash_merge_commit_title: COMMIT_OR_PR_TITLE
+  nebula-analysis:
+    advanced_security: false
+    allow_update_branch: true
+    archived: false
+    collaborators:
+      push:
+        - web3-bot
+    has_discussions: false
+    merge_commit_message: PR_TITLE
+    merge_commit_title: MERGE_MESSAGE
+    secret_scanning_push_protection: false
+    secret_scanning: false
+    squash_merge_commit_message: COMMIT_MESSAGES
+    squash_merge_commit_title: COMMIT_OR_PR_TITLE
+  network-measurements:
+    advanced_security: false
+    allow_update_branch: false
+    archived: false
+    collaborators:
+      push:
+        - probelab-cmi
+        - web3-bot
+    has_discussions: false
+    merge_commit_message: PR_TITLE
+    merge_commit_title: MERGE_MESSAGE
+    secret_scanning_push_protection: true
+    secret_scanning: true
+    squash_merge_commit_message: COMMIT_MESSAGES
+    squash_merge_commit_title: COMMIT_OR_PR_TITLE
+  ookla:
+    advanced_security: false
+    allow_update_branch: false
+    archived: false
+    collaborators:
+      push:
+        - web3-bot
+    has_discussions: false
+    merge_commit_message: PR_TITLE
+    merge_commit_title: MERGE_MESSAGE
+    secret_scanning_push_protection: false
+    secret_scanning: false
+    squash_merge_commit_message: COMMIT_MESSAGES
+    squash_merge_commit_title: COMMIT_OR_PR_TITLE
+  p2p-forge:
+    advanced_security: false
+    allow_update_branch: false
+    archived: false
+    collaborators:
+      push:
+        - web3-bot
+    has_discussions: false
+    merge_commit_message: PR_TITLE
+    merge_commit_title: MERGE_MESSAGE
+    secret_scanning_push_protection: true
+    secret_scanning: true
+    squash_merge_commit_message: COMMIT_MESSAGES
+    squash_merge_commit_title: COMMIT_OR_PR_TITLE
+  parsec:
+    advanced_security: false
+    allow_update_branch: true
+    archived: false
+    collaborators:
+      push:
+        - web3-bot
+    has_discussions: false
+    merge_commit_message: PR_TITLE
+    merge_commit_title: MERGE_MESSAGE
+    secret_scanning_push_protection: true
+    secret_scanning: true
+    squash_merge_commit_message: COMMIT_MESSAGES
+    squash_merge_commit_title: COMMIT_OR_PR_TITLE
+  probelab-infra:
+    advanced_security: false
+    allow_update_branch: true
+    archived: false
+    collaborators:
+      admin:
+        - kasteph
+        - pl-deploy-bot
+      maintain:
+        - BigLep
+      pull:
+        - achingbrain
+      push:
+        - lidel
+        - SgtPooki
+        - web3-bot
+    has_discussions: false
+    merge_commit_message: PR_TITLE
+    merge_commit_title: MERGE_MESSAGE
+    secret_scanning_push_protection: false
+    secret_scanning: false
+    squash_merge_commit_message: PR_BODY
+    squash_merge_commit_title: PR_TITLE
+  prysm:
+    advanced_security: false
+    allow_update_branch: false
+    archived: false
+    collaborators:
+      push:
+        - web3-bot
+    has_discussions: false
+    merge_commit_message: PR_TITLE
+    merge_commit_title: MERGE_MESSAGE
+    secret_scanning_push_protection: false
+    secret_scanning: false
+    squash_merge_commit_message: COMMIT_MESSAGES
+    squash_merge_commit_title: COMMIT_OR_PR_TITLE
+  roadmap:
+    archived: true
+  thunderdome:
+    advanced_security: false
+    allow_update_branch: true
+    archived: false
+    collaborators:
+      push:
+        - hacdias
+        - web3-bot
+    has_discussions: false
+    merge_commit_message: PR_TITLE
+    merge_commit_title: MERGE_MESSAGE
+    secret_scanning_push_protection: true
+    secret_scanning: true
+    squash_merge_commit_message: COMMIT_MESSAGES
+    squash_merge_commit_title: COMMIT_OR_PR_TITLE
+  tiros:
+    advanced_security: false
+    allow_update_branch: true
+    archived: false
+    collaborators:
+      push:
+        - web3-bot
+    has_discussions: false
+    merge_commit_message: PR_TITLE
+    merge_commit_title: MERGE_MESSAGE
+    secret_scanning_push_protection: true
+    secret_scanning: true
+    squash_merge_commit_message: COMMIT_MESSAGES
+    squash_merge_commit_title: COMMIT_OR_PR_TITLE
+    topics:
+      - golang
+      - ipfs
+      - kademlia
+      - libp2p
+  tracecatcher:
+    advanced_security: false
+    allow_update_branch: true
+    archived: false
+    collaborators:
+      push:
+        - web3-bot
+    has_discussions: false
+    merge_commit_message: PR_TITLE
+    merge_commit_title: MERGE_MESSAGE
+    secret_scanning_push_protection: true
+    secret_scanning: true
+    squash_merge_commit_message: COMMIT_MESSAGES
+    squash_merge_commit_title: COMMIT_OR_PR_TITLE
+  website:
+    advanced_security: false
+    allow_update_branch: false
+    archived: false
+    collaborators:
+      push:
+        - probelab-cmi
+        - web3-bot
+    has_discussions: false
+    merge_commit_message: PR_TITLE
+    merge_commit_title: MERGE_MESSAGE
+    secret_scanning_push_protection: true
+    secret_scanning: true
+    squash_merge_commit_message: COMMIT_MESSAGES
+    squash_merge_commit_title: COMMIT_OR_PR_TITLE
+    topics:
+      - discv5
+      - ipfs
+      - libp2p
+      - p2p
+  zikade:
+    advanced_security: false
+    allow_update_branch: true
+    archived: false
+    branch_protection:
+      main:
+        blocks_creations: false
+        lock_branch: false
+        required_pull_request_reviews:
+          dismiss_stale_reviews: false
+          require_code_owner_reviews: true
+          required_approving_review_count: 0
+          restrict_dismissals: false
+        required_status_checks:
+          strict: true
+    collaborators:
+      push:
+        - web3-bot
+    has_discussions: false
+    merge_commit_message: PR_TITLE
+    merge_commit_title: MERGE_MESSAGE
+    secret_scanning_push_protection: true
+    secret_scanning: true
+    squash_merge_commit_message: PR_BODY
+    squash_merge_commit_title: PR_TITLE
+    topics:
+      - golang
+      - ipfs
+      - kademlia
+      - libp2p
+teams:
+  ipdx:
+    members:
+      maintainer:
+        - galargh
+        - laurentsenta
+  probelab-bots:
+    members:
+      member:
+        - probelab-cmi
+        - web3-bot
+  probelab-core:
+    members:
+      maintainer:
+        - cortze
+        - dennis-tra
+        - guillaumemichel
+        - iand
+        - kasteph
+        - yiannisbot
