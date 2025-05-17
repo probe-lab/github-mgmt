@@ -1378,7 +1378,20 @@ repositories:
     merge_commit_title: MERGE_MESSAGE
     rulesets:
       Default Branch Protection:
-        {}
+        conditions:
+          ref_name:
+            include:
+              - ~DEFAULT_BRANCH
+        enforcement: active
+        rules:
+          creation: false
+          deletion: true
+          non_fast_forward: true
+          required_linear_history: false
+          required_signatures: false
+          update_allows_fetch_and_merge: false
+          update: false
+        target: branch
     secret_scanning_push_protection: true
     secret_scanning: true
     squash_merge_commit_message: COMMIT_MESSAGES
