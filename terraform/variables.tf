@@ -16,6 +16,8 @@ variable "resources" {
     github_team_membership         = optional(map(any), {})
     github_repository_file         = optional(map(any), {})
     github_issue_labels            = optional(map(any), {})
+    github_repository_ruleset      = optional(map(any), {})
+    github_organization_ruleset    = optional(map(any), {})
   })
   default = null
 }
