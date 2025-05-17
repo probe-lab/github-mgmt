@@ -7,14 +7,14 @@ variable "write_delay_ms" {
 variable "resources" {
   description = "Resources to import."
   type = object({
-    github_membership              = map(any)
-    github_repository              = map(any)
-    github_repository_collaborator = map(any)
-    github_branch_protection       = map(any)
-    github_team                    = map(any)
-    github_team_repository         = map(any)
-    github_team_membership         = map(any)
-    github_repository_file         = map(any)
-    github_issue_labels            = map(any)
+    github_membership              = optional(map(any), {})
+    github_repository              = optional(map(any), {})
+    github_repository_collaborator = optional(map(any), {})
+    github_branch_protection       = optional(map(any), {})
+    github_team                    = optional(map(any), {})
+    github_team_repository         = optional(map(any), {})
+    github_team_membership         = optional(map(any), {})
+    github_repository_file         = optional(map(any), {})
+    github_issue_labels            = optional(map(any), {})
   })
 }
