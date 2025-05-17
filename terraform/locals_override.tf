@@ -14,6 +14,5 @@ locals {
     "github_repository_file",
     "github_issue_labels",
     "github_repository_ruleset",
-    "github_organization_ruleset",
   ]
 }
