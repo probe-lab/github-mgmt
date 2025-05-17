@@ -235,7 +235,7 @@ resource "github_issue_labels" "this" {
   repository = each.value.repository
 
   dynamic "label" {
-    for_each = try(each.value.labels, [])
+    for_each = try(each.value.label, [])
     content {
       color       = try(label.value["color"], "7B42BC")
       description = try(label.value["description"], "")

@@ -133,7 +133,7 @@ locals {
           for item in [
             for repository, config in lookup(local.config, "repositories", {}) : {
               repository = repository
-              labels = [
+              label = [
                 for name, config in lookup(config, "labels", {}) : merge(config, {
                   name = name
                 })
