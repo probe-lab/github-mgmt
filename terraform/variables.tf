@@ -17,4 +17,5 @@ variable "resources" {
     github_repository_file         = optional(map(any), {})
     github_issue_labels            = optional(map(any), {})
   })
+  default = null
 }
