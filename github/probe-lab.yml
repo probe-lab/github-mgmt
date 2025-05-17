@@ -267,6 +267,7 @@ repositories:
         required_pull_request_reviews:
           dismiss_stale_reviews: false
           require_code_owner_reviews: false
+          require_last_push_approval: false
           required_approving_review_count: 1
           restrict_dismissals: false
         required_status_checks:
@@ -599,6 +600,7 @@ repositories:
         required_pull_request_reviews:
           dismiss_stale_reviews: false
           require_code_owner_reviews: true
+          require_last_push_approval: false
           required_approving_review_count: 0
           restrict_dismissals: false
         required_status_checks:
