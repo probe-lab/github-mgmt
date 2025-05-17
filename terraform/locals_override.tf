@@ -11,6 +11,7 @@ locals {
     "github_team_repository",
     "github_team",
     "github_branch_protection",
-    "github_repository_file"
+    "github_repository_file",
+    "github_issue_labels",
   ]
 }
