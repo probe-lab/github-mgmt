@@ -6,13 +6,11 @@ members:
   admin:
     - cortze
     - dennis-tra
-    - galargh
-    - guillaumemichel
-    - iand
     - kasteph
-    - laurentsenta
     - yiannisbot
   member:
+    - guillaumemichel
+    - iand
     - probelab-cmi
     - web3-bot
 repositories:
@@ -1664,7 +1662,6 @@ repositories:
     collaborators:
       admin:
         - kasteph
-        - pl-deploy-bot
       maintain:
         - BigLep
       pull:
@@ -1762,7 +1759,6 @@ repositories:
     archived: false
     collaborators:
       push:
-        - hacdias
         - web3-bot
     has_discussions: false
     labels:
@@ -2011,10 +2007,7 @@ repositories:
       - libp2p
 teams:
   ipdx:
-    members:
-      maintainer:
-        - galargh
-        - laurentsenta
+    {}
   probelab-bots:
     members:
       member:
@@ -2025,7 +2018,8 @@ teams:
       maintainer:
         - cortze
         - dennis-tra
-        - guillaumemichel
-        - iand
         - kasteph
         - yiannisbot
+      member:
+        - guillaumemichel
+        - iand
