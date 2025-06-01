@@ -806,6 +806,8 @@ repositories:
     collaborators:
       admin:
         - cortze
+      push:
+        - web3-bot
     has_discussions: false
     labels:
       bug:
