@@ -813,6 +813,9 @@ repositories:
       bug:
         color: d73a4a
         description: Something isn't working
+      dependencies:
+        color: 0366d6
+        description: Pull requests that update a dependency file
       documentation:
         color: 0075ca
         description: Improvements or additions to documentation
@@ -822,6 +825,9 @@ repositories:
       enhancement:
         color: a2eeef
         description: New feature or request
+      go:
+        color: 16e2e2
+        description: Pull requests that update go code
       good first issue:
         color: 7057ff
         description: Good for newcomers
@@ -889,6 +895,9 @@ repositories:
       need/author-input:
         color: ededed
         description: Needs input from the original author
+      python:
+        color: 2b67c6
+        description: Pull requests that update python code
       question:
         color: d876e3
         description: Further information is requested
@@ -1261,6 +1270,9 @@ repositories:
       kind/generated:
         color: c7def8
         description: This issue might have been automatically generated
+      python:
+        color: 2b67c6
+        description: Pull requests that update python code
       question:
         color: d876e3
         description: Further information is requested
@@ -1582,6 +1594,9 @@ repositories:
       enhancement:
         color: a2eeef
         description: New feature or request
+      go:
+        color: 16e2e2
+        description: Pull requests that update go code
       good first issue:
         color: 7057ff
         description: Good for newcomers
