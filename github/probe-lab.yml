@@ -315,6 +315,9 @@ repositories:
     advanced_security: false
     allow_update_branch: false
     archived: false
+    collaborators:
+      push:
+        - web3-bot
     has_discussions: false
     labels:
       bug:
@@ -366,6 +369,9 @@ repositories:
     advanced_security: false
     allow_update_branch: false
     archived: false
+    collaborators:
+      push:
+        - web3-bot
     has_discussions: false
     labels:
       bug:
@@ -905,6 +911,8 @@ repositories:
         - mattevans
         - pk910
         - raulk
+      push:
+        - web3-bot
     has_discussions: false
     labels:
       bug:
@@ -1440,6 +1448,9 @@ repositories:
     advanced_security: false
     allow_update_branch: false
     archived: false
+    collaborators:
+      push:
+        - web3-bot
     has_discussions: false
     labels:
       bug:
@@ -1485,6 +1496,9 @@ repositories:
     advanced_security: false
     allow_update_branch: false
     archived: false
+    collaborators:
+      push:
+        - web3-bot
     has_discussions: false
     labels:
       bug:
